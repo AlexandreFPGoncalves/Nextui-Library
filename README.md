@@ -1,7 +1,7 @@
 ### Testing NextUI Design Library
 
-[NextUI](https://nextui.org/)
-[NextUI Components](https://nextui.org/docs/guide/getting-started)
+- [NextUI](https://nextui.org/)
+- [NextUI Components](https://nextui.org/docs/guide/getting-started)
 
 ## Install dependencies
 
