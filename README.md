@@ -2,6 +2,7 @@
 
 -   [NextUI](https://nextui.org/)
 -   [NextUI Components](https://nextui.org/docs/guide/getting-started)
+    xd
 
 ## Install dependencies
 
