@@ -3,8 +3,6 @@ import { useMemo, useState } from 'react';
 
 interface LandingPageProps {
 	resources: LandingPageResources;
-	handleOnSwitchChange: () => void;
-	isDark: boolean | undefined;
 }
 
 export interface LandingPageResources {
@@ -12,14 +10,6 @@ export interface LandingPageResources {
 }
 
 export const useLandingPageHelper = (): LandingPageProps => {
-	const { type, isDark } = useTheme();
-
-	const handleOnSwitchChange = () => {
-		const nextTheme = isDark ? 'light' : 'dark';
-		window.localStorage.setItem('data-theme', nextTheme); // you can use any storage
-		changeTheme(nextTheme);
-	};
-
 	const resources = useMemo((): LandingPageResources => {
 		return {
 			title: 'Hello World',
@@ -28,7 +18,5 @@ export const useLandingPageHelper = (): LandingPageProps => {
 
 	return {
 		resources,
-		handleOnSwitchChange,
-		isDark,
 	};
 };
