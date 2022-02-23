@@ -1,18 +1,25 @@
 import { useLandingPageHelper } from './landingPage.helper';
-import { Container, Card, Row, Text } from '@nextui-org/react';
+import { Card, Switch } from '@nextui-org/react';
+import { Block, PageBase } from '../../components';
+import { rem } from '../../helpers';
 
 export const LandingPage: React.FC = () => {
-	const { resources } = useLandingPageHelper();
+	const { resources, handleOnSwitchChange, isDark } = useLandingPageHelper();
 	return (
-		<Container fluid>
-			<Card color="primary">
-				<Row justify="center" align="center">
-					<Text h6 size={15} color="white" css={{ m: 0 }}>
-						NextUI gives you the best developer experience with all the features you need for building
-						beautiful and modern websites and applications.
-					</Text>
-				</Row>
-			</Card>
-		</Container>
+		<PageBase>
+			<Block align={{ horizontal: 'start' }}>Test</Block>
+
+			<Block stack style={{ height: '100%', justifyContent: 'space-evenly' }}>
+				<Block align={{ horizontal: 'center' }}>
+					<Card color="secondary" style={{ width: rem(350), height: rem(250), display: 'flex' }}>
+						<Block stack style={{ height: '100%', justifyContent: 'space-evenly' }}>
+							<Block align={{ horizontal: 'center' }}>
+								<Switch checked={isDark} onChange={handleOnSwitchChange} />
+							</Block>
+						</Block>
+					</Card>
+				</Block>
+			</Block>
+		</PageBase>
 	);
 };
