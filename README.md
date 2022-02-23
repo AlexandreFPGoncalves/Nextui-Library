@@ -55,4 +55,55 @@ In your terminal after you are done installing the dependencies run `npm start`
 </PageBase>
 ```
 
-##### Currently working on a light-dark mode
+##### Light-Dark is working
+
+-   Installed use-dark-mode package
+    `npm i use-dark-mode`
+
+###### Imported on App.js :
+
+```js
+import { createTheme, NextUIProvider } from '@nextui-org/react';
+import useDarkMode from 'use-dark-mode';
+```
+
+###### Created both my Light and Dak theme :
+
+```node
+const lightTheme = createTheme({
+	type: 'light',
+});
+
+const darkTheme = createTheme({
+	type: 'dark',
+	theme: {
+		colors: {
+			myDarkColor: '#52fa',
+		},
+	},
+});
+```
+
+###### On my LandingPage I had to import use-dark-mode once again
+
+```js
+import useDarkMode from 'use-dark-mode';
+```
+
+###### Created a constant that will manage my darkmode
+
+```js
+const darkMode = useDarkMode(false);
+```
+
+###### My Switch will toggle this constant to change my view mode
+
+```js
+<Switch checked={darkMode.value} onChange={() => darkMode.toggle()} />
+```
+
+###### Finnaly my components will have their styles based on my view mode
+
+```js
+<Card css={{ backgroundColor: darkMode.value ? '$myLightColor' :  '$myDarkColor'}}>
+```

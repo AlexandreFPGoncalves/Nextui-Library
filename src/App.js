@@ -1,8 +1,7 @@
-import { createTheme, NextUIProvider, getDocumentTheme } from '@nextui-org/react';
-import { useEffect, useState } from 'react';
-
-import './App.css';
+import { createTheme, NextUIProvider } from '@nextui-org/react';
+import useDarkMode from 'use-dark-mode';
 import { LandingPage } from './pages';
+import './App.css';
 
 const lightTheme = createTheme({
 	type: 'light',
@@ -10,31 +9,17 @@ const lightTheme = createTheme({
 
 const darkTheme = createTheme({
 	type: 'dark',
+	theme: {
+		colors: {
+			myDarkColor: '#52fa',
+		},
+	},
 });
 
 function App() {
-	const [isDark, setIsDark] = useState(false);
-
-	useEffect(() => {
-		// you can use any storage
-		let theme = window.localStorage.getItem('data-theme');
-		setIsDark(theme === 'dark');
-
-		const observer = new MutationObserver((mutation) => {
-			let newTheme = getDocumentTheme(document?.documentElement);
-			setIsDark(newTheme === 'dark');
-		});
-
-		// Observe the document theme changes
-		observer.observe(document?.documentElement, {
-			attributes: true,
-			attributeFilter: ['data-theme', 'style'],
-		});
-
-		return () => observer.disconnect();
-	}, []);
+	const darkMode = useDarkMode(false);
 	return (
-		<NextUIProvider theme={isDark ? darkTheme : lightTheme}>
+		<NextUIProvider theme={darkMode.value ? darkTheme : lightTheme}>
 			<LandingPage />
 		</NextUIProvider>
 	);
