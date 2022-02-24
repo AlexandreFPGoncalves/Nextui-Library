@@ -5,7 +5,7 @@ export type BlockAlignItem = 'start' | 'center' | 'end';
 
 export type BlockAlign = { horizontal?: BlockAlignItem; vertical?: BlockAlignItem };
 
-export interface BlockProps {
+interface BlockProps {
 	stack?: boolean;
 	align?: BlockAlign;
 	important?: boolean;
