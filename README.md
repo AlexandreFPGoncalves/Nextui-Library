@@ -78,7 +78,7 @@ const darkTheme = createTheme({
 	type: 'dark',
 	theme: {
 		colors: {
-			myDarkColor: '#52fa',
+			myDarkColor: '#202024',
 		},
 	},
 });
@@ -107,3 +107,5 @@ const darkMode = useDarkMode(false);
 ```js
 <Card css={{ backgroundColor: darkMode.value ? '$myLightColor' :  '$myDarkColor'}}>
 ```
+
+##### Currently working on the navbar

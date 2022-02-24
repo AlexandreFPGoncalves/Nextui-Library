@@ -11,7 +11,7 @@ const darkTheme = createTheme({
 	type: 'dark',
 	theme: {
 		colors: {
-			myDarkColor: '#52fa',
+			myDarkColor: '#111111',
 		},
 	},
 });
