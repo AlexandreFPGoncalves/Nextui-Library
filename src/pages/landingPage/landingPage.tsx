@@ -30,7 +30,7 @@ export const LandingPage: React.FC = () => {
 								</Block>
 
 								<FollowButton
-									buttonMarginLeft={36}
+									buttonMarginLeft={48}
 									followButtonText={resources.followBtn}
 									unfollowButtonText={resources.unfollowBtn}
 									onClick={handleFollowButtonOnClick}
