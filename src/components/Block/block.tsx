@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container } from '@nextui-org/react';
 
 export type BlockAlignItem = 'start' | 'center' | 'end';
 
@@ -26,7 +25,7 @@ const translateAlign = (align?: BlockAlignItem): string | undefined => {
 
 export const Block: React.FC<BlockProps> = ({ children, stack, align, style, important }) => {
 	return (
-		<Container
+		<div
 			style={{
 				display: 'flex',
 				flexDirection: stack ? 'column' : 'row',
@@ -38,6 +37,6 @@ export const Block: React.FC<BlockProps> = ({ children, stack, align, style, imp
 			}}
 		>
 			{children}
-		</Container>
+		</div>
 	);
 };

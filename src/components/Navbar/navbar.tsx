@@ -20,8 +20,8 @@ export const Navbar: React.FC<NavbarProps> = ({ logoTitle }) => {
 			}}
 		>
 			<Grid xs={6}>
-				<Block stack style={{ backgroundColor: '$myDarkColor' }} align={{ horizontal: 'center' }}>
-					<Block align={{ horizontal: 'center' }}>
+				<Block stack align={{ horizontal: 'center' }} style={{ width: '100%' }}>
+					<Block>
 						<img src={darkMode.value ? icons.leftArrow_light : icons.leftArrow_dark} />
 						<h3 style={{ marginBottom: rem(5) }}>{logoTitle}</h3>
 						<img src={darkMode.value ? icons.rightArrow_light : icons.rightArrow_dark} />
@@ -29,8 +29,8 @@ export const Navbar: React.FC<NavbarProps> = ({ logoTitle }) => {
 				</Block>
 			</Grid>
 			<Grid xs={6}>
-				<Block style={{ backgroundColor: '$myDarkColor' }} align={{ vertical: 'center' }}>
-					<Block align={{ horizontal: 'center' }}>
+				<Block stack align={{ horizontal: 'center', vertical: 'center' }} style={{ width: '100%' }}>
+					<Block>
 						<a href="https://github.com/AlexandreFPGoncalves" target="_blank">
 							<img
 								style={{ width: rem(32), height: rem(32) }}
