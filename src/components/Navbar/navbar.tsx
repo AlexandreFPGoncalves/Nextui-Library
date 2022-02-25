@@ -15,7 +15,9 @@ export const Navbar: React.FC<NavbarProps> = ({ logoTitle }) => {
 		<Grid.Container
 			gap={2}
 			style={{ padding: '15px 0 0 0', boxShadow: 'var(--shadow-3)' }}
-			css={{ backgroundColor: '$navbar' }}
+			css={{
+				backgroundColor: '$navbar',
+			}}
 		>
 			<Grid xs={6}>
 				<Block stack style={{ backgroundColor: '$myDarkColor' }} align={{ horizontal: 'center' }}>

@@ -20,7 +20,7 @@ const darkTheme = createTheme({
 	theme: {
 		colors: {
 			background: 'var(--grey-900)',
-			navbar: 'var(--black)',
+			navbar: 'var(--grey-900)',
 			navbarBorder: 'var(--grey-50)',
 			text: 'var(--white)',
 		},
