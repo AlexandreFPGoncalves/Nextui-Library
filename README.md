@@ -1,3 +1,6 @@
+## Website hosted [here](https://alexandrefpgoncalves.github.io/Nextui-Library/)
+![Website Snippet](https://user-images.githubusercontent.com/88319848/155785359-97fae9f2-0451-4850-ae01-04d8bbe2dba9.png)
+
 ### Testing NextUI Design Library
 
 -   [NextUI](https://nextui.org/)
