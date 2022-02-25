@@ -5,13 +5,24 @@ import './App.css';
 
 const lightTheme = createTheme({
 	type: 'light',
+	theme: {
+		colors: {
+			background: 'var(--white)',
+			navbar: 'var(--grey-50)',
+			navbarBorder: 'var(--grey-900)',
+			text: 'var(--grey-900)',
+		},
+	},
 });
 
 const darkTheme = createTheme({
 	type: 'dark',
 	theme: {
 		colors: {
-			myDarkColor: '#111111',
+			background: 'var(--white)',
+			navbar: 'var(--grey-900)',
+			navbarBorder: 'var(--grey-50)',
+			text: 'var(--white)',
 		},
 	},
 });
