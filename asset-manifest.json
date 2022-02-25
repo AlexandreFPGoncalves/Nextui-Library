@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Nextui-Library/static/css/main.e7b57d79.css",
+    "main.js": "/Nextui-Library/static/js/main.1306786c.js",
+    "static/media/avatar.jpg": "/Nextui-Library/static/media/avatar.4fc62b579d474ad3cee7.jpg",
+    "static/media/github_light.svg": "/Nextui-Library/static/media/github_light.341b7c6137810eb0cb2a69fcc52d8135.svg",
+    "static/media/sun.svg": "/Nextui-Library/static/media/sun.2c7c41e227d05e8e8e8c96300b427566.svg",
+    "static/media/github_dark.svg": "/Nextui-Library/static/media/github_dark.8d46c50ac254edbb20ac97ac789afa6e.svg",
+    "index.html": "/Nextui-Library/index.html",
+    "static/media/brackets_dark.svg": "/Nextui-Library/static/media/brackets_dark.a4256ba9ec8f6f186139afacba31f22a.svg",
+    "static/media/brackets_light.svg": "/Nextui-Library/static/media/brackets_light.0aaac7ecb4f86cf565bb271dba437004.svg",
+    "static/media/moon.svg": "/Nextui-Library/static/media/moon.ba9cc9a911942f20301f9e2bf3cd0bad.svg",
+    "static/media/leftArrow_dark.svg": "/Nextui-Library/static/media/leftArrow_dark.315adbf9662dc58ceeb6939c85643859.svg",
+    "static/media/leftArrow_light.svg": "/Nextui-Library/static/media/leftArrow_light.35ab0185e7282f916acefd5e0a321752.svg",
+    "static/media/rightArrow_dark.svg": "/Nextui-Library/static/media/rightArrow_dark.dc81c10bc6abea2eef4a64fcbd6e38d3.svg",
+    "static/media/rightArrow_light.svg": "/Nextui-Library/static/media/rightArrow_light.d25dcdd488f995ffe04bd4db2e787bb7.svg",
+    "main.e7b57d79.css.map": "/Nextui-Library/static/css/main.e7b57d79.css.map",
+    "main.1306786c.js.map": "/Nextui-Library/static/js/main.1306786c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7b57d79.css",
+    "static/js/main.1306786c.js"
+  ]
+}
